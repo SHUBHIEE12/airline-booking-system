@@ -10,7 +10,7 @@
 ```
 {
   "development": {
-    "username": <Your db login name>,
+    "username": <Your db login>,
     "password": <your sql password>,
     "database": "your database name",
     "host": "127.0.0.1",
