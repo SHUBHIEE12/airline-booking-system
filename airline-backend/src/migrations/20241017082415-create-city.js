@@ -1,4 +1,5 @@
 
+  
   'use strict';
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -12,7 +13,8 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING,
-        
+        allowNull: false,
+        unique:true
       },
       createdAt: {
         allowNull: false,

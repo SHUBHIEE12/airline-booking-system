@@ -12,9 +12,22 @@
   "development": {
     "username": <Your db login>,
     "password": <your sql password>,
-    "database": "your database name",
+    "database": <Your data base name>,
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
  
 }
+```
+
+-Once you have added db config go to the src folder and execute ` npz squelize init `
+
+##DB desing
+ -Airplane table
+ -Flight
+ -Airport
+ -City
+
+ -A Flight belongs to an airplane but one airplane can be used in multiple flights
+ -A city has many flights , but a  flight belongs to one  airport
+  ---
