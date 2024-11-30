@@ -2,6 +2,11 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
+const result = dotenv.config();
+console.log("dotenv result:", result);
+console.log("PORT from process.env:", process.env.PORT);
+
+
 
 
 let value = {

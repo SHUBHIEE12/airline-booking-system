@@ -23,12 +23,12 @@ const setupAndStartServer = async () => {
         console.log(`Server started at port ${PORT}`);
         const repo = new CityRepository();
 
-        try {
-            await repo.createCity({ name: "New Delhi" });
-            console.log("City created successfully");
-        } catch (error) {
-            console.error("Error creating city:", error);
-        }
+        // try {
+        //     await repo.createCity({ name: "New Delhi" });
+        //     console.log("City created successfully");
+        // } catch (error) {
+        //     console.error("Error creating city:", error);
+        // }
     });
 };
 
