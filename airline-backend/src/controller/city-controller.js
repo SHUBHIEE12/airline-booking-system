@@ -49,10 +49,10 @@ const destroy = async ( req,res) => {
 // GEt -> /city/:id
 const get = async ( req,res) => {
     try {
-        const city == await cityService.getCity(req.params.id);
+        const city = await cityService.getCity(req.params.id);
         return res.status(200).json({
             data:city,
-            success:true;
+            success:true,
             message:"City retrieved successfully",
             err:{}
         })
@@ -90,7 +90,7 @@ const update = async ( req,res) => {
     }
 }
 
-module.exports{
+module.exports={
     create,
     destroy,
     get,

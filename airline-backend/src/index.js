@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const value = require("./config/serverConfig.js"); // Adjust this if you're exporting differently
 const bodyParser = require("body-parser");
 const CityRepository = require("./repository/city-repsitory.js");
+const apiRoutes = require('./routes/index.js')
 
 dotenv.config();
 
@@ -15,6 +16,8 @@ const setupAndStartServer = async () => {
 
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
+
+    app.use('/api',apiRoutes)
 
     app.listen(PORT, async () => {
         console.log(`Server started at port ${PORT}`);

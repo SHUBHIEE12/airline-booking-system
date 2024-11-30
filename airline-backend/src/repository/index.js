@@ -1,5 +1,5 @@
-const CityRepositary = require("./city-repsitory")
+const CityRepository = require("./city-repsitory")
 
-module.exports{
-     CityRepositary,
+module.exports={
+     CityRepository,
 }
