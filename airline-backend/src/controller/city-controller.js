@@ -28,7 +28,7 @@ const create = async ( req,res) => {
 // DELETE -> /city/:id  it is a params...
 const destroy = async ( req,res) => {
     try {
-        const response = CityService.deleteCity(req.params.id);
+        const response = cityService.deleteCity(req.params.id);
         return res.status(200).json({
             data: response,
             success:true,
