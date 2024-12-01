@@ -27,12 +27,19 @@ class CityRepository{
 
     async updateCity(cityId , data){
         try {
-            const city =  await City.update(data,{
-                where : {
-                    id : cityId,
-                }
-            });
+            // this approch is only valid in postgres;:: returning true is not valid in sequelize...
+            // const city =  await City.update(data,{
+            //     where : {
+            //         id : cityId,
+                
+            //     }
+            // });
 
+            //this is valid in sequelize;
+            const city = await City.findByPk(cityId);
+            city.name = data.name;
+            await city.save();
+            
             return city;
         } catch (error) {
             
