@@ -46,10 +46,10 @@ class CityService{
 
         }
     }
-    async getAllCities()
+    async getAllCities(filter)//it is being consumed in city controller
     {
         try {
-            const cities = await this.cityRepository.getAllCities();
+            const cities = await this.cityRepository.getAllCities({name:filter.name});
             return cities;
         } catch (error) {
             console.log("error occured in service layer")

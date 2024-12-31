@@ -92,7 +92,9 @@ const update = async ( req,res) => {
 
 const getall = async(req,res) =>{
     try {
-        const cities = await cityService.getAllCities();
+        const cities = await cityService.getAllCities(req.query);
+        //we are using req.query because name will come in params
+        //ex:city?name=in...
         return res.status(200).json({
             data:cities,
             success:true,
