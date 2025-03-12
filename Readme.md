@@ -1,4 +1,4 @@
-```markdown
+
 # Welcome to the Flights Service
 
 ## Project Setup
@@ -6,9 +6,9 @@
 Follow these steps to set up the project on your local machine:
 
 1. **Clone the repository**
-   ```bash
+   
    git clone <repository-url>
-   ```
+   
 2. **Navigate to the project directory**
    ```bash
    cd <project-directory>
