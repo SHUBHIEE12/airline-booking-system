@@ -35,6 +35,16 @@
   ### Tables
 
   ### City -> id ,name ,created_at,updated_at
-  ###airport -> id , name , address , city_id , created-at , updated_at
+
+  ### airport -> id , name , address , city_id , created-at , updated_at
     Relationship-> City has many airport and Airport belongs to a city(one to many)
+    command for creating model...
+    ``` npx sequelize model:generate --name Airport --attributes name:string,address:string,CityId:integer```
+
+    command for migrating model
+
+    
+    ``` npx sequelize db:migrate ```
+    
+    
   
