@@ -1,6 +1,6 @@
 
   
-  export default Airplane;
+  
   'use strict';
 const {
   Model
