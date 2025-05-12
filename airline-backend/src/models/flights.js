@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     flightNumber: {
       type:DataTypes.STRING,
       allowNull:false,
-      uniquw:true
+      unique:true
 
     },
     airplaneId: {
@@ -36,12 +36,13 @@ module.exports = (sequelize, DataTypes) => {
       allowNull:false
 
     },
+    
     arrivalTime: {
       type:DataTypes.DATE,
       allowNull:false
 
     },
-    departureTime: {
+    departureTime:{
       type:DataTypes.DATE,
       allowNull:false
 
