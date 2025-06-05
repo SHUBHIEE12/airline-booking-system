@@ -1,4 +1,5 @@
-const { City } = require("../models/index")
+
+  const { City } = require("../models/index")
 const {Op} = require("sequelize")
 
 //it is being consumed in city-servicce

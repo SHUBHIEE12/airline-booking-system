@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const value = require("./config/serverConfig.js"); // Adjust this if you're exporting differently
 const bodyParser = require("body-parser");
-const CityRepository = require("./repository/city-repsitory.js");
+const CityRepository = require("./repository/city-repository.js");
 const apiRoutes = require('./routes/index.js')
 
 dotenv.config();
