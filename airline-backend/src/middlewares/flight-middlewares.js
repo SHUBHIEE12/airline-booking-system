@@ -1,3 +1,4 @@
+const {clientErrors} = require ("../utils/error-codes")
 const validateCreateFlight = (req , res , next) => {
      if (
         
@@ -13,7 +14,7 @@ const validateCreateFlight = (req , res , next) => {
      {
         //id any of the body param is missing we come inside
 
-        return res.status(400).json({
+        return res.status(clientErrors.BAD_REQUEST).json({
             data:{},
             success:false,
             message:"Invalid request body for creating the flight",
